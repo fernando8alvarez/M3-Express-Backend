@@ -9,5 +9,8 @@ http.createServer( function(req, res){
 	html = html.replace('{nombre}', nombre); // Usamos el método replace es del objeto String
 	res.end(html);
 
-
 }).listen(1337, '127.0.0.1');
+
+//.replace(): es un metodo de string, donde remplazamos lo que se llame 
+//'{nombre}' dentro del archivo, por lo que haya en la variable 'nombre'
+// Es decir en el archivo templete.html donde haya '{nombre}' lo reemplzamos con 'Soy Henry!'

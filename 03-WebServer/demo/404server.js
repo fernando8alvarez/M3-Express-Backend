@@ -15,7 +15,7 @@ http.createServer( function(req, res){
 		res.end( JSON.stringify(obj) );
 	} else{
 		res.writeHead(404); //Ponemos el status del response a 404: Not Found
-		res.end(); //No devolvemos nada más que el estado.
+		res.end('Maduro que se muera'); //No devolvemos nada más que el estado.
 	}
 	
 }).listen(1337, '127.0.0.1');
